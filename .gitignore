@@ -24,3 +24,5 @@ libshellstringconv.h
 
 # exclude
 !tsconfig.json
+!package-lock.json
+!package.json

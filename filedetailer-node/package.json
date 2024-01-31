@@ -1,0 +1,22 @@
+{
+  "name": "filedetailer-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c --bundleConfigAsCjs && powershell -F build-gyp.ps1 -ExecutionPolicy RemoteSigned && echo F | xcopy /Y ..\\libfiledetailer\\x64\\Release\\libfiledetailer.dll .\\dist\\libfiledetailer.dll && echo F | xcopy /Y ..\\libshellstringconv\\libshellstringconv.dll .\\dist\\libshellstringconv.dll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/node": "^20.10.6",
+    "node-addon-api": "^7.1.0",
+    "rollup": "^4.9.2",
+    "tslib": "^2.6.2"
+  }
+}
