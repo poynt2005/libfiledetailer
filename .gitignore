@@ -1,0 +1,26 @@
+# directories
+
+.vs
+x64
+dist
+bin
+obj
+node_modules
+
+# exts
+*.node
+*.dll
+*.exp
+*.obj
+*.lib
+*.zip
+*.exe
+*.pdb
+*.json
+
+# files
+FileString.sln
+libshellstringconv.h
+
+# exclude
+!tsconfig.json
